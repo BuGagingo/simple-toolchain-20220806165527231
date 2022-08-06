@@ -1,5 +1,10 @@
 ---
 applications:
- - name: movies-reviews-database
+ - name: movies-reviews-database-350
    random-route: false
    memory: 128M
+   parameters:
+      disk-quota: 512M
+      memory: 256M
+      buildpack: https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.7.25/nodejs-buildpack-cflinuxfs3-v1.7.25.zip
+      
